@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('../assets/images/11834033-1170.jpeg') center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* animation */
+  .star {
+    position: absolute;
+    width: 0.03em;
+    height: 0.02em;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkling 3s infinite alternate;
+  }
+  
+  @keyframes twinkling {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .star-1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkling-stars 2s infinite alternate;
+    -webkit-animation: twinkling-stars 1.5s infinite alternate;
+}
+@keyframes twinkling-stars {
+    0% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .shooting-star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    animation: shootingStar 2s linear infinite;
+}
+
+  @keyframes shootingStar {
+    0% {
+        top: 50px;
+        left: 300px;
+      opacity: 0;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        top: 500px;
+        left: 1000px;
+      opacity: 0;
+}
+  }
+  .shooting-star-1 {
+    position: absolute;
+    width: 4px;
+    height: 5px;
+    background-color: white;
+    animation: shootingStar-1 4s linear infinite;
+    animation-delay: 1s;
+    -webkit-animation: shootingStar-1 4s linear infinite;
+}
+
+  @keyframes shootingStar-1 {
+    0% {
+        top: 50px;
+        right: 300px;
+      opacity: 0;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        top: 500px;
+        right: 700px;
+      opacity: 0;
+}
+  }
+  .alien {
+    position: absolute;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    animation: alientMove 4s linear infinite;
+    animation-delay: 3s;
+    -webkit-animation: alienMove 4s linear infinite;
+}
+  @keyframes alienMove {
+    0% {
+        left: 200;
+        opacity: 0;
+    }
+    50% {
+        left: 500px; 
+        opacity: 50%;
+    }
+    100% {
+        left: 700px;
+        opacity: 0;
+    }
+  }
